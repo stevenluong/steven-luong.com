@@ -1,0 +1,115 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue]{classic} % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic} % idem
+
+% character encoding
+\usepackage[utf8]{inputenc} % replace by the encoding you are using
+\usepackage{graphicx}
+\usepackage[francais]{babel}
+% adjust the page margins
+\usepackage[scale=0.9]{geometry}
+\geometry{top=0.4cm,bottom=0.2cm}
+\setlength{\hintscolumnwidth}{3cm} % if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{7.5cm}} % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths} % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Steven}
+\familyname{Luong}
+
+\extrainfo{\url{www.steven-luong.com}\\25 ans \\ Nationalité Française \\ Permis B - Véhiculé}
+\title{Chef de Projet Technique \small{\newline Ingénieur INSA BAC+5} \newline \newline Mis à jour le 19/01/2016} % optional, remove the line if not wanted
+\address{Singapour}{} % optional, remove the line if not wanted
+%\mobile{} % optional, remove the line if not wanted
+
+%\fax{} % optional, remove the line if not wanted
+\email{mail@steven-luong.com} % optional, remove the line if not wanted
+\phone{skype : stev.luong} % optional, remove the line if not wanted
+%\photo[80pt]{moi.png} % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Site web: }
+%\quote{Some quote (optional)} % optional, remove the line if not wanted
+
+\quote{\Large{Start Small, Think Big}}
+%\nopagenumbers{} % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+% content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+%\includegraphics[width=0.2\linewidth{}]{moi.png}
+
+%\begin{center}
+%\huge{\textit{Stage Ingénieur}}
+%\end{center}
+
+
+\section{EXPÉRIENCES}
+\cventry{Septembre 2013 - \\Aujourd'hui \\ (2 ans 5 mois)}{Dalet Digital Media Systems}{}{Asia \& Europe}
+{}{References :  BBC Sport, KBS, SBS, Perform Group, Belgacom 
+\\Chef de projet technique dans le cadre d'un VIE 
+\\Intégration de solutions de production, diffusion et archivage de médias
+\begin{itemize}
+\item Plannification et rapport des taches techniques pour une équipe allant jusqu'à 4 personnes
+\item Suivi des bugs et features avec la R\&D localisée en Israel
+\item Installation des servers et du produit, customisation en fonction des besoins fonctionnels
+\item Intégration avec les differents systèmes tiers (Webservices - XSL)
+\end{itemize}
+Systèmes Tiers : Tableau, Harmonic ProMedia, Telestream Vantage, NetApp Ontap, Quantum StorNext}{}
+\cventry{Mars 2012 -\\Août 2013\\ (1 an 6 mois)}{Capgemini (Arkadin)}{Paris}{France}
+{}{Développeur-intégrateur du système de facturation MetraNet
+\begin{itemize}
+\item Développement d'une couche DAL basée sur l'API de MetraNet
+\item Conception et développement d'une application MVC de type "Order Entry"
+\item Intégration et validation de l'application
+\end{itemize}
+Technologies : Windows SQL Server, .NET C\#, MVC3, VS2012, SVN, HP QC, Jenkins, Sonar}{}
+\cventry{Janvier 2011 -\\Juin 2011 \\ (6 mois)}{Bibliothèque Publique du Centre Pompidou}{Paris \& Rouen}{France}
+{}{Chef de projet d’une équipe de 7 personnes dans un projet à mi-temps pour la réalisation d’un outil de recherche et de géolocalisation de médias pour la bibliothèque publique du Centre Pompidou
+\\ Technologies : Java J2EE, Javascript/JQuery - Certification ISO 9001 : 2008}{}
+
+\section{FORMATIONS}
+
+%\cventry{2005}{Bac S}{spécialité Mathématiques}{(Évreux)}{}{}
+\cventry{2007 - 2012}{Institut National des Sciences Appliquées INSA}{Rouen}
+{France}{}{Spécialité Architecture des
+Systèmes d’Informations, semestre Erasmus en Autriche}{}{}
+\cventry{2001 - 2007}{Collège \& Lycée Saint Martin de France}{Pontoise}{France}{}{}{}{}
+
+
+\section{AUTRES COMPETENCES INFORMATIQUES}
+\cvline{Web}{Ruby (Ruby On Rails), JavaScript (JQuery, Node.js, Socket.io, AngularJS)}
+\cvline{Data Mining}{Python (Pandas, Sklearn)}
+\cvline{Base de données}{Relationnelles (SQLite, MySQL, MS SQL Server), NoSQL (Redis)}
+
+\section{LANGUES}
+\cventry{Anglais}{Courant}{}
+{}{TOEIC 940/990, TOEFL 100/120}{Echanges scolaires: Londres (Sevenoaks School), Baton-Rouge (Episcopal School of Baton Rouge), Toronto (Trinity College School)}
+\cventry{Allemand}{Bonnes notions}{}
+{}{Niveau CECR B2}{Echanges scolaires : Berlin (Katolische Schule Salvator), Düsseldorf (Augustinianum Gaesdonck)}
+\cventry{Espagnol}{Bonnes notions}{}
+{}{Niveau CECR B1}{Echanges scolaires : Mexico (Colegio Vista Hermosa)}
+\cventry{Chinois}{Débutant}{}
+{}{}{Séjours linguistiques : Shanghai (1 mois)}
+
+\section{ACTIVITES ET LOISIRS}
+\cvline{Sport}{Rugby (15 ans), Boxe anglaise, Natation}{}{}{}{}
+\cvline{Code}{\url{www.slapps.fr}}
+\cvline{Autres}{Voyages, Dessins}{}{}{}{}
+
+
+\nocite{*}
+
+\bibliography{publications} % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%% end of file `template_en.tex'.
+
+
+

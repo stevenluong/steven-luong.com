@@ -1,0 +1,9 @@
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 7 days"
+</IfModule>
+<IfModule mod_headers.c>
+  <FilesMatch "\.(js|css|xml|gz)$">
+    Header append Vary: Accept-Encoding
+  </FilesMatch>
+</IfModule>

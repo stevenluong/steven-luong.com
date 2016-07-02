@@ -1,0 +1,125 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage{graphicx}
+\usepackage[francais]{babel}
+% adjust the page margins
+\usepackage[scale=0.9]{geometry} %default = 0.9
+\geometry{top=0.5cm,bottom=0.2cm}
+\setlength{\hintscolumnwidth}{3cm}             % if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{7.5cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                      % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Steven}
+\familyname{Luong}
+\extrainfo{\url{www.steven-luong.com} \\ French nationality \\ Driving license}
+\title{Technical Project Manager %\small{\newline Information Systems Architecture}
+ \newline \newline \small{Updated : 19/01/2016} }                          % optional, remove the line if not wanted
+\address{Singapore}{}    % optional, remove the line if not wanted
+%\mobile{}                   % optional, remove the line if not wanted
+
+%\fax{}                      % optional, remove the line if not wanted
+\email{mail@steven-luong.com}               % optional, remove the line if not wanted
+\phone{Skype : stev.luong}                    % optional, remove the line if not wanted
+   % optional, remove the line if not wanted
+  % optional, remove the line if not wanted
+%\photo[80pt]{moi.png}                     % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Site web: \url{www.steven-luong.com}}
+%\quote{Some quote (optional)}            % optional, remove the line if not wanted
+
+\quote{\Large{Start Small, Think Big}}
+%\nopagenumbers{}                         % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+%\includegraphics[width=0.2\linewidth{}]{moi.png}
+
+%\begin{center}
+%\huge{\textit{Stage Ingénieur}}
+%\end{center}
+
+
+%\section{Master Thesis}
+%  \cvline{title}{\emph{Title}}
+%  \cvline{supervisors}{Supervisors}
+%  \cvline{description}{\small Short thesis abstract}
+  
+  
+\section{WORK EXPERIENCE}
+
+\cventry{September 2013 - Today \\(2 years +)}{Dalet Digital Media Systems}{}{Asia \& Europe}
+{}{References : BBC Sport, KBS, SBS, Perform Group, Belgacom \\Technical Project Manager as part of the french V.I.E. program \\ Deployment of Media Asset Management Systems (production, broadcast, archive) 
+\begin{itemize}
+\item Tasks planification and reporting
+\item Bugs and features follow up
+\item Servers installation and product customization
+\item End-to-end integration with third systems (Webservices - XSL) 
+\end{itemize}
+Third systems :  Tableau, Harmonic ProMedia, Telestream Vantage, NetApp Ontap, Quantum StorNext}{}{}
+
+\cventry{March 2012 - August 2013 \\(1 year 6 months)}{Capgemini (Arkadin)}{Paris}{France}
+{}{Integration of the billing solution MetraNet for the B2B Telco Arkadin: 
+\begin{itemize}
+\item Development of a DAL based on the API proposed by MetraNet (.NET C\#, Entity Framework)
+\item Design \& development of an "Order Entry" application (MS SQL Server,  .NET C\#, MVC3)
+\item Integration \& validation of the application (SVN, Jenkins, Sonar)
+\end{itemize} }{}{}
+
+\cventry{January 2011 - June 2011\\ (6 months)}{Public Information Library of the Pompidou Centre}{Paris \& Rouen}{France}
+{}{Project manager of a team of 7 students with a strong quality component (ISO 9001:2008 certification)\\  Specification, design \& development of a location-based searching tool of the medias using JAVA/J2EE}{}
+
+\section{EDUCATION}
+
+%\cventry{2005}{Bac S}{spécialité Mathématiques}{(Évreux)}{}{}
+\cventry{2007 - 2012}{Institut National des Sciences Appliquées INSA}{Rouen}
+{France}{}{Information Systems Architecture - MSc Diploma In Software Engineering And Computer Sciences}{}{}
+\cventry{2011 - 2012}{Technische Universität Graz}{Graz}
+{Austria}{}{}{}{}
+\cventry{2001 - 2007}{Saint Martin de France high school}{Pontoise}{France}{}{}{}{}
+
+
+\section{OTHER COMPUTER SKILLS}
+
+\cvline{Web}{Ruby (Ruby On Rails), JavaScript (JQuery, Node.js, Socket.io, AngularJS)}
+\cvline{Data Mining}{Python (Pandas, Sklearn)}
+\cvline{Databases}{Relational (SQLite, MySQL, MS SQL Server), NoSQL (Redis)}
+
+
+\section{LANGUAGES}
+
+\cventry{French}{Native}{}
+{}{}{}
+\cventry{English}{Fluent}{}
+{}{TOEIC 940/990, TOEFL 100/120}{London (Sevenoaks School), Baton-Rouge (Episcopal School of Baton Rouge), Toronto (Trinity College School)}
+\cventry{German}{Good working level}{}
+{}{CECR Level B2}{Berlin (Katolische Schule Salvator), Düsseldorf (Collegium Augustinianum Gaesdonck)}
+\cventry{Spanish}{Good working level}{}
+{}{CECR Level B1}{Mexico (Colegio Vista Hermosa)}
+\cventry{Chinese}{Basic level}{}
+{}{}{Shanghai (1 month)}
+
+\section{INTERESTS}
+
+\cvline{Sports}{Rugby (15 years), Boxing, Swimming}
+\cvline{Coding}{\url{www.slapps.fr}}
+\cvline{Others}{Travelling, Drawing}
+
+\nocite{*}
+\bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%% end of file `template_en.tex'.
+
