@@ -1,0 +1,13 @@
+version: '2'
+services:
+    http:
+        build: .
+        command: http-server . -p 80
+        restart: always
+        volumes:
+            - .:/http
+        networks:
+            - nginx_default
+networks:
+    nginx_default:
+        external: true
